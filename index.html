@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An error ocurred</title>
+    <script defer src="app.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: white;
+        font-family: arial, sans-serif;
+      }
+
+      .main {
+        width: 350px;
+        border: 1px solid grey;
+        background-color: white;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+        /* border-radius: 5px; */
+      }
+      .error-window {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .close-btn {
+        font-size: 36px;
+        cursor: pointer;
+        margin-top: -20px;
+        margin-bottom: -20px;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        padding-left: 40px;
+        gap: 20px;
+        height: 70px;
+      }
+
+      .error-icon {
+        width: 40px;
+        height: 40px;
+      }
+
+      .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        border: 1px;
+        background-color: rgb(243, 243, 243);
+        font-size: 14px;
+      }
+
+      button {
+        cursor: pointer;
+        width: 80px;
+        height: 25px;
+        border: 1px solid grey;
+      }
+      button:hover {
+        border-width: 2px;
+        border-color: rgb(14, 117, 250);
+      }
+      .button-ok {
+        color: black;
+      }
+
+      .button-cancel {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main" id="main">
+      <div class="error-window">
+        <span>Error</span>
+        <span class="close-btn" onclick="gaaqre()">&times;</span>
+      </div>
+      <div class="content">
+        <img
+          class="error-icon"
+          src="https://winaero.com/blog/wp-content/uploads/2015/05/error-cancel-abort-icon.png"
+        />
+        <span>An error occured.</span>
+      </div>
+
+      <div class="footer">
+        <button class="button-ok" onclick="gaaqre()">OK</button>
+        <button class="button-cancel" onclick="gaaqre()">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>
